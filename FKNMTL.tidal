@@ -1,0 +1,11 @@
+d1
+$ every 7 (fast 8)
+$ whenmod 4 3 (const $ s "[crow*2, cp:2*16, dorkbot*8]" # speed 2 # gain 1.5)
+$ s "[hoover*8, rave*16]" # speed (range 0 24 $ saw) # squiz 5  # gain 3
+
+d2
+$ every 4 (fast 4)
+$ whenmod 8 6 (|> gain 0)
+$ whenmod 4 3 (fast 2)
+$ s "clubkick ~ ~ clubkick ~ ~ clubkick ~ " # speed 0.4 # gain 1.15 # room 0.1 # distort 5
+
