@@ -1,0 +1,26 @@
+--drums + perscussions
+d1
+$ stack [
+  --s "breaks165"
+  s "[bd:2 ~ ~ bd:2~ ~ bd:2 ~]*2"
+  --,s "rave:1*2" # speed 2
+ ]
+# gain 2
+# distort 0.7
+
+
+solo 1
+
+-- synth line
+d2
+--sound + pattern
+$ s "[supergrind ~  ~ supergrind ~ ~ supergrind ~]*2" #accelerate 0  #detune (range 2 8 $ rand) #voice 5 #speed  12
+--envelope
+#att "[0 1 0 0]" #hold 10 #rel 8
+--note sequencer
+# n "[5 8 7 10 8 8 10 12, 0 1 3 5]/2"
+--effects
+# room 1
+# delay 1
+
+hush
