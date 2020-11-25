@@ -1,6 +1,5 @@
 d1
 $ every 16 (# s "feelfx")
-$ every 3 (striate 2)
 $ every 8 (# speed 1.22)
 $ stutWith 2 (1/4)(rev)
 $ every 3 (# hpf 300 )
