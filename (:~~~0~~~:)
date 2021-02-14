@@ -1,0 +1,11 @@
+d1
+$ stack [
+every 2 ((# n (run 8)).(# s "house").(# speed 1.2))
+$ every 3 (stut 4 1 (1/12))$ every 4 (stut 4 1 (1/16))
+$ s "[house]*4" # gain 1.8
+,
+jux (|+ n "[e8, b7]")
+$ every "2.5" (fast 2)
+$ every 3 (stut 4 1 (1/6))
+$ n "[0.5 0.75]*4" # n "[c a f e]/2" # s "[superhoover, superchip]"# release 0.25 # gain 1
+ ]
