@@ -1,0 +1,24 @@
+
+
+d1 $every 8 ((striate 4).(# distort 2).(|+ note "12"))
+$ sometimesBy "0.005" ((# room "1000").(# size 20000).(# s "crow").(# speed 0.75))
+$ every 6 (rev)
+$ sometimesBy 0.5 ((stut 4 1 (1/16)))
+$ jux ((# speed 0.5).(slow 4).(# release 4))
+$ stack [
+ note (scale "[diminished ionian]/8" "[ 0 ~ 2 ~ 6 ~ ~, 1 ~ 15 ~ 13 12 ~]") # s "[amencutup, pad:4]" |+ up "0.5 0.25 1.5" # release "0.25"
+]
+
+d1
+ $ sometimesBy 0.5 ((striate 4).(# distort 2).(|+ note "12").(slow 4))
+-- $ sometimesBy "0.005" ((# room "1000").(# size 20000).(# s "crow").(# speed 0.75))
+$ every 6 (rev)
+$ sometimesBy 0.5 ((stut 4 1 (1/16)))
+-- $ jux ((# speed 0.5).(slow 4).(# release 0.5).(# gain 2))
+$ stack [
+ note (scale "[diminished ionian]/8" "[ 0 ~ 2 ~ 6 ~ ~, 1 ~ 15 ~ 13 12]*2") # s "[amencutup, pad:4]" |+ up "0.5 0.25 1.5" # release "0.25" # gain 1
+, s "[house(3,8),[clubkick(3,8)]*2, cp*4]" # gain 2 # n "[1 2 3 4]*3"
+]
+
+
+scaleList
